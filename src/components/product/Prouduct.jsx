@@ -4,6 +4,8 @@ import { products } from "../data/product.json";
 import { useRecoilState } from "recoil";
 import { cartData } from "../atoms/cart";
 import { useNavigate } from "react-router-dom";
+import { Image } from "cloudinary-react";
+import Intro from "../intro/Intro";
 
 const Prouduct = () => {
   let [cart, setCart] = useRecoilState(cartData);
@@ -28,16 +30,17 @@ const Prouduct = () => {
   }
   return (
     <div>
+      <Intro />
       <h2>All Prouducts</h2>
 
       <div className="flex items-center justify-center flex-row flex-wrap gap-4 ">
         {products.map((each) => (
           <div
             onClick={(e) => {}}
-            className="flex p-3 shadow-lg items-center justify-center flex-col flex-wrap gap-2 "
+            className="flex w-full md:w-[285px]    p-3 shadow-lg items-center justify-center flex-col flex-wrap gap-2 "
             key={each.id}
           >
-            <img src={each.img} alt={each.name} />
+            <Image className='h-[301px] w-full ' cloudName={each.cloudname} publicId={each.img} loading='lazy' />
             <h4> {each.name} </h4>
             <p> {each.disc} </p>
             <button onClick={(e)=> addToCart(each) }>Add To Cart</button>
