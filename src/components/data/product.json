@@ -1,7 +1,7 @@
 {
     "products": [
       {
-        "id": 1,
+        "id": "1",
         "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1725724714/scandinavian-interior-mockup-wall-decal-background_1_wq1kkp.png",
         "name": "Syltherine 1",
         "discount": "-30%",
@@ -11,7 +11,7 @@
         "cloudname": "dlifiojbx"
       },
       {
-        "id": 2,
+        "id": "2",
         "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1725768315/image_8_naai2g.png",
         "name": "Syltherine 2",
         "discount": "-30%",
@@ -21,7 +21,7 @@
         "cloudname": "dlifiojbx"
       },
       {
-        "id": 3,
+        "id": "3",
         "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1725768316/image_7_zsg51o.png",
         "name": "Syltherine 3",
         "discount": "-30%",
